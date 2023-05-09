@@ -2,9 +2,38 @@
 font-family: 'Old Standard TT', serif;
 font-family: 'Rubik', sans-serif; */
 
+/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px 0;
+    padding-bottom: 50px;
+  }
+
+/* Body */  
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+/* Logo */
+h2.logo {
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: black;
+}
+
+/* Redes sociales y Navbar */
+.navbar li.nav-item a.nav-link {
+    font-family: 'Old Standard TT', serif;
+    color: #000000;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
 
