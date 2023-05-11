@@ -14,10 +14,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400&family=Old+Standard+TT:ital@0;1&family=Rubik:wght@400;700&display=swap" rel="stylesheet">
-    <!--Jquery-->
-    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
     <!--JS-->
     <script src="./JS/app.js"></script>
+    <!--Jquery-->
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
   </head>
   <body>
     <!--Header-->
@@ -76,60 +76,14 @@
               </li>    
             </ul>
             <!--Boton de Busqueda-->
-            <form class="d-flex" id="search-form">
-              <input
-                id="busqueda" 
-                class="form-control me-2" 
-                type="search" 
-                placeholder="Ingrese palabra clave" 
-                aria-label="Search"
-              >
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
               <button class="btn btn-outline-success" type="submit">Buscar</button>
-          </form>
+            </form>
           </div>
         </div>
       </nav>
     </header>
-
-    <!--Carrusel-->
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active c-item" data-bs-interval="2000">
-          <img src="./img/articulo-1.jpg" class="d-block w-100 c-img" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5><a href="./noticia-1.html">Madrid y el City empataron en la semifinal de ida de la Champions</a></h5>
-            <p>El elenco merengue jugó mejor, pero no pudo hacer la diferencia en su casa.</p>
-          </div>
-        </div>
-        <div class="carousel-item c-item " data-bs-interval="2000">
-          <img src="./img/articulo-2.jpg" class="d-block w-100 c-img" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5><a href="./noticia-2.html">Pedro Pascal triunfa en los premios juveniles MTV Movie & TV Awards</a></h5>
-            <p>El actor chileno obtuvo los galardones por "The Las of Us" en las categorías de Mejor héroe, Mejor serie y el Mejor dúo.</p>
-          </div>
-        </div>
-        <div class="carousel-item c-item" data-bs-interval="2000">
-          <img src="./img/articulo-3.jpg" class="d-block w-100 c-img" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5><a href="noticia-3.html">Día Mundial de la Contraseña: Las claves que no debes utilizar</a></h5>
-            <p>Mejora tu seguridad cibernética y protege tu información personal con los siguientes pasos.</p>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
 
 
     <!--Footer-->

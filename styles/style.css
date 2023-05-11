@@ -18,7 +18,8 @@ header {
 
 /* Body */  
 body {
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Rubik', s
+    ans-serif;
 }
 
 /* Logo */
@@ -37,3 +38,34 @@ h2.logo {
     padding-left: 1.5rem;
   }
 
+#carouselExampleCaptions {
+    background-color: #333;
+    color: #fff;
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+}
+
+#carouselExampleCaptions h2 {
+    font-size: 24px;
+  }
+  
+  #carouselExampleCaptions p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+#carousel-caption h5, .carousel-caption p {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+  
+
+.c-item {
+    height: 600px;
+}
+
+.c-img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.5);
+}

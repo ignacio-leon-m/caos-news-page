@@ -14,10 +14,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400&family=Old+Standard+TT:ital@0;1&family=Rubik:wght@400;700&display=swap" rel="stylesheet">
-    <!--Jquery-->
-    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
     <!--JS-->
     <script src="./JS/app.js"></script>
+    <!--Jquery-->
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
   </head>
   <body>
     <!--Header-->
@@ -72,64 +72,79 @@
                 <a class="nav-link active" href="#">Deportes</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="./suscripcion.html">Suscripción</a>
+                <a class="nav-link active" href="#">Suscripción</a>
               </li>    
             </ul>
             <!--Boton de Busqueda-->
-            <form class="d-flex" id="search-form">
-              <input
-                id="busqueda" 
-                class="form-control me-2" 
-                type="search" 
-                placeholder="Ingrese palabra clave" 
-                aria-label="Search"
-              >
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
               <button class="btn btn-outline-success" type="submit">Buscar</button>
-          </form>
+            </form>
           </div>
         </div>
       </nav>
     </header>
 
-    <!--Carrusel-->
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+
+    <!--Formulario de inscripcion-->
+    <form class="ms-5 me-5">
+      <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre Completo</label>
+          <input 
+            class="form-control" 
+            id="nombre"
+            type="text" 
+            placeholder="Escribe tu nombre completo" 
+            aria-label="default input example"
+          >
       </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active c-item" data-bs-interval="2000">
-          <img src="./img/articulo-1.jpg" class="d-block w-100 c-img" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5><a href="./noticia-1.html">Madrid y el City empataron en la semifinal de ida de la Champions</a></h5>
-            <p>El elenco merengue jugó mejor, pero no pudo hacer la diferencia en su casa.</p>
-          </div>
-        </div>
-        <div class="carousel-item c-item " data-bs-interval="2000">
-          <img src="./img/articulo-2.jpg" class="d-block w-100 c-img" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5><a href="./noticia-2.html">Pedro Pascal triunfa en los premios juveniles MTV Movie & TV Awards</a></h5>
-            <p>El actor chileno obtuvo los galardones por "The Las of Us" en las categorías de Mejor héroe, Mejor serie y el Mejor dúo.</p>
-          </div>
-        </div>
-        <div class="carousel-item c-item" data-bs-interval="2000">
-          <img src="./img/articulo-3.jpg" class="d-block w-100 c-img" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5><a href="noticia-3.html">Día Mundial de la Contraseña: Las claves que no debes utilizar</a></h5>
-            <p>Mejora tu seguridad cibernética y protege tu información personal con los siguientes pasos.</p>
-          </div>
-        </div>
+      <div class="mb-3">
+          <label for="rut" class="form-label">RUT</label>
+          <input 
+            class="form-control" 
+            id="rut"
+            type="text" 
+            placeholder="Ej: 16.984.425-9" 
+            aria-label="default input example"
+            pattern="\d{1,3}\.\d{1,3}\.\d{1,3}-\d{1,2}"
+            required
+          >
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
+      <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Correo Electrónico</label>
+          <input 
+            type="email" 
+            class="form-control" 
+            id="exampleInputEmail1" 
+            aria-describedby="emailHelp"
+            placeholder="Escribe tu correo electrónico"
+          >
+          <div id="emailHelp" class="form-text">No compartiremos tu correo con nadie.</div>
+      </div>
+      <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+          <input 
+            type="password" 
+            class="form-control" 
+            id="exampleInputPassword1"
+            placeholder="Escribe tu contraseña"
+          >
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword2" class="form-label">Confirmar Contraseña</label>
+        <input 
+          type="password" 
+          class="form-control" 
+          id="exampleInputPassword2"
+          placeholder="Confirma tu contraseña"
+        >
+      </div>
+      <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Recibir noticias por correo</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
 
 
     <!--Footer-->
