@@ -22,6 +22,14 @@ body {
     ans-serif;
 }
 
+h1 {
+    text-align: center;
+    justify-content: center;
+    font-family: 'Hind Siliguri', sans-serif;
+    color: #000000;
+
+}
+
 /* Logo */
 h2.logo {
     font-family: 'Hind Siliguri', sans-serif;
@@ -68,4 +76,10 @@ h2.logo {
     height: 100%;
     object-fit: cover;
     filter: brightness(0.5);
+}
+
+
+/* Footer */
+.copyright {
+    font-family: 'Rubik', sans-serif;
 }
