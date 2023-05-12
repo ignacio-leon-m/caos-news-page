@@ -10,6 +10,9 @@ font-family: 'Rubik', sans-serif; */
 }
 
 /* Header */
+header  a:hover {
+    color: #0D6EFD !important;
+}
 header {
     text-align: center;
     padding: 20px 0;
@@ -18,7 +21,8 @@ header {
 
 /* Body */  
 body {
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f2f2f2;
 }
 
 /* Logo */
@@ -35,5 +39,32 @@ h2.logo {
     color: #000000;
     padding-right: 1.5rem;
     padding-left: 1.5rem;
+
   }
 
+/* Cards */
+.noticias {
+    margin: 60px 20px;
+    text-align: center;
+    
+}
+
+
+/* Footer */
+footer a{
+    text-decoration: none;
+    font-size: 17px;
+
+}
+footer p{
+
+    font-size: 17px;
+    
+}
+footer  a:hover {
+    color: #0D6EFD !important;
+}
+
+i{
+    font-size: 25px;
+}
