@@ -126,23 +126,16 @@
           >
           <div id="emailHelp" class="form-text">No compartiremos tu correo con nadie.</div>
       </div>
+      <!--Que contenga un patrón de 1 numero, 1 mayuscula y 1 minuscula por lo minimo-->
       <div class="mb-3">
           <label for="pass-form1" class="form-label">Contraseña</label>
           <input 
             type="password" 
             class="form-control" 
             id="pass-form1"
-            placeholder="Escribe tu contraseña"
+            placeholder="Escribe tu contraseña (Debe contener al menos un número, una mayúscula y una minúscula)"
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
           >
-      </div>
-      <div class="mb-3">
-        <label for="pass-form2" class="form-label">Confirmar Contraseña</label>
-        <input 
-          type="password" 
-          class="form-control" 
-          id="pass-form2"
-          placeholder="Confirma tu contraseña"
-        >
       </div>
       <div class="mb-3 form-check">
           <input type="checkbox" class="form-check-input" id="exampleCheck1">
