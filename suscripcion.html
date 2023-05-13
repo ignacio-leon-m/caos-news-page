@@ -58,7 +58,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent"> <!--collapse para que se oculte en pantallas pequeñas--> 
             <ul class="navbar-nav me-auto mb-2 mb-lg-0"> <!--me-auto para que se alinie a la izquierda-->
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Noticias</a>
+                <a class="nav-link active" aria-current="page" href="./index.html">Noticias</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active" href="#">Espectáculos</a>
@@ -76,7 +76,7 @@
                 <a class="nav-link active" href="#">Deportes</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#">Suscripción</a>
+                <a class="nav-link active" href="./suscripcion.html">Suscripción</a>
               </li>    
             </ul>
             <!--Boton de Busqueda-->
@@ -98,7 +98,7 @@
           <label for="nombre" class="form-label">Nombre Completo</label>
           <input 
             class="form-control" 
-            id="nombre"
+            id="nombre-form"
             type="text" 
             placeholder="Escribe tu nombre completo" 
             aria-label="default input example"
@@ -110,38 +110,37 @@
             id="rut-form"
             class="form-control" 
             type="text" 
-            placeholder="Ej: 16.984.425-9" 
+            placeholder="Ej: 16.985.423-1" 
             aria-label="default input example"
-            pattern="\d{1,3}\.\d{1,3}\.\d{1,3}-\d{1,2}"
             required
           >
       </div>
       <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Correo Electrónico</label>
+          <label for="email-form" class="form-label">Correo Electrónico</label>
           <input 
             type="email-form" 
             class="form-control" 
-            id="exampleInputEmail1" 
+            id="email-form" 
             aria-describedby="emailHelp"
             placeholder="Escribe tu correo electrónico"
           >
           <div id="emailHelp" class="form-text">No compartiremos tu correo con nadie.</div>
       </div>
       <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+          <label for="pass-form1" class="form-label">Contraseña</label>
           <input 
             type="password" 
             class="form-control" 
-            id="exampleInputPassword1"
+            id="pass-form1"
             placeholder="Escribe tu contraseña"
           >
       </div>
       <div class="mb-3">
-        <label for="exampleInputPassword2" class="form-label">Confirmar Contraseña</label>
+        <label for="pass-form2" class="form-label">Confirmar Contraseña</label>
         <input 
           type="password" 
           class="form-control" 
-          id="exampleInputPassword2"
+          id="pass-form2"
           placeholder="Confirma tu contraseña"
         >
       </div>
