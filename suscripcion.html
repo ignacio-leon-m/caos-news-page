@@ -14,10 +14,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400&family=Old+Standard+TT:ital@0;1&family=Rubik:wght@400;700&display=swap" rel="stylesheet">
-    <!--JS-->
-    <script src="./JS/app.js"></script>
     <!--Jquery-->
     <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <!--JS-->
+    <script src="./JS/app.js"></script>
+
   </head>
   <body>
     <!--Header-->
@@ -54,7 +55,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent"> <!--collapse para que se oculte en pantallas pequeñas--> 
             <ul class="navbar-nav me-auto mb-2 mb-lg-0"> <!--me-auto para que se alinie a la izquierda-->
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Noticias</a>
+                <a class="nav-link active" aria-current="page" href="./index.html">Noticias</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active" href="#">Espectáculos</a>
@@ -101,10 +102,10 @@
           >
       </div>
       <div class="mb-3">
-          <label for="rut" class="form-label">RUT</label>
-          <input 
+          <label for="rut-form" class="form-label">RUT</label>
+          <input
+            id="rut-form"
             class="form-control" 
-            id="rut"
             type="text" 
             placeholder="Ej: 16.984.425-9" 
             aria-label="default input example"
@@ -115,7 +116,7 @@
       <div class="mb-3">
           <label for="exampleInputEmail1" class="form-label">Correo Electrónico</label>
           <input 
-            type="email" 
+            type="email-form" 
             class="form-control" 
             id="exampleInputEmail1" 
             aria-describedby="emailHelp"
