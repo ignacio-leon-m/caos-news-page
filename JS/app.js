@@ -1,5 +1,3 @@
-console.log("hola");
-
 //Que botón buscar limpie el formulario
 $(document).ready(function(){
     $('#search-form').click(function(){
@@ -12,10 +10,10 @@ $(document).ready(function(){
 //Validación 1 (submit):
 //Al presionar submit, se debe validar que los campos no estén vacíos
 
-$(document).ready(function(){
+$(document).ready(function(){ 
     $('#submit-form').click(function(){
         //rut
-        let rut = $('#rut-form').val();
+        let rut = $('#rut-form').val(); 
         //nombre completo
         let nombre = $('#nombre-form').val();
         //email
@@ -106,3 +104,34 @@ $(document).ready(function(){
         }
     });
 });
+
+//Validación 5 (contraseñas):
+//1. Que las contraseñas no estén vacías
+//2. Que las contraseñas tengan un largo mínimo de 6 caracteres
+//3. Que las contraseñas sean iguales
+//4. Cambiar el color del borde del input a rojo si no cumple con las condiciones anteriores
+
+$(document).ready(function(){
+    $('#pass-form1').keyup(function(){ //keyup es cuando se suelta la tecla
+        let pass1 = $('#pass-form1').val(); //val() es el valor del input
+        let pass2 = $('#pass-form2').val(); 
+        if (pass1.length == 0){
+            $('#pass-form1').css('border-color', 'red');
+        }
+        if (pass1.length < 6){
+            $('#pass-form1').css('border-color', 'red');
+        }
+        if (pass1.length > 6){
+            $('#pass-form1').css('border-color', 'green');
+        }
+        //validación de que las contraseñas sean iguales. Si no son iguales, se cambia el color del borde a rojo
+        if (pass1 != pass2){
+            $('#pass-form1').css('border-color', 'red');
+            $('#pass-form2').css('border-color', 'red');
+        } 
+    });
+});
+
+
+
+
