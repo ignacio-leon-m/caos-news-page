@@ -1,6 +1,18 @@
-/* font-family: 'Hind Siliguri', sans-serif;
+/*
+font-family: 'Hind Madurai', sans-serif;
+font-family: 'Lora', serif;
 font-family: 'Old Standard TT', serif;
-font-family: 'Rubik', sans-serif; */
+*/
+
+
+/* Color Theme Swatches in Hex */
+.polar-pop-1-hex { color: #6CC5C6; }
+.polar-pop-2-hex { color: #DEF0EE; }
+.polar-pop-3-hex { color: #9ED6D7; }
+.polar-pop-4-hex { color: #025959; }
+.polar-pop-5-hex { color: #D1645D; }
+
+
 
 /* Reset */
 * {
@@ -11,7 +23,7 @@ font-family: 'Rubik', sans-serif; */
 
 /* Header */
 header  a:hover {
-    color: #0D6EFD !important;
+    color: #6CC5C6 !important;
 }
 header {
     text-align: center;
@@ -21,13 +33,13 @@ header {
 
 /* Body */  
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f2f2f2;
+    font-family: 'Hind Madurai', sans-serif;
+    background-color: #fff;
 }
 
 /* Logo */
 h2.logo {
-    font-family: 'Hind Siliguri', sans-serif;
+    font-family: 'Lora', serif;
     font-size: 2.5rem;
     font-weight: bold;
     color: black;
@@ -35,7 +47,7 @@ h2.logo {
 
 /* Redes sociales y Navbar */
 .navbar li.nav-item a.nav-link {
-    font-family: 'Old Standard TT', serif;
+    font-family: 'Hind Madurai', sans-serif;
     color: #000000;
     padding-right: 1.5rem;
     padding-left: 1.5rem;
@@ -63,7 +75,7 @@ footer p{
     
 }
 footer  a:hover {
-    color: #0D6EFD !important;
+    color: #6CC5C6 !important;
 }
 
 i{
@@ -74,7 +86,7 @@ i{
 a.not-link {
     text-decoration: none;
     font-weight: 500;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Old Standard TT', serif;
     color: white;
 }
 
@@ -91,4 +103,39 @@ a.not-link {
         height: auto;
         filter: none;
     }
+}
+
+/*Para agregar una linea debajo de elementos*/
+#topbar,
+.navbar 
+{
+    border-bottom: solid 1px;
+}
+
+/*estilo de botones btn*/
+
+.btn {
+    font-family: 'Hind Madurai', sans-serif;
+    font-weight: 500;
+    font-size: 0.9rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem; 
+    border: none;
+    transition: all 0.3s ease-in-out;
+    background-color: #6CC5C6;
+}
+
+.btn:hover
+{
+    background-color: #025959;
+}
+
+
+.btn-custom {
+    background-color: #6CC5C6;
+    color: white;
+}
+.btn-custom:hover {
+    background-color: #025959;
+    color: white;
 }
