@@ -106,3 +106,4 @@ $(document).ready(function(){
 });
 
 //La validación de la contraseña está con REGEX en el HTML
+
